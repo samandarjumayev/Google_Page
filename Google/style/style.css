@@ -177,3 +177,49 @@ body {
 .cards .card:hover {
     background-color: #ffffff33;
 }
+
+
+
+/*  Footer */
+.footer {
+    height: 60px;
+}
+.foot {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left {
+    color: #fff;
+    text-decoration: underline;
+    background-color: rgba(24, 24, 24, 0.819);
+    padding: 9px;
+    font-weight: 200;
+    border-radius: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    cursor: pointer;
+}
+.footer-left:hover {
+    background: none;
+}
+
+.footer-right {
+    background-color: rgba(31, 31, 31, 0.775);
+    color: #fff;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 13px;
+    cursor: pointer;
+}
+.footer-right:hover {
+    background-color: black;
+}
