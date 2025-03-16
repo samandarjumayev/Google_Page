@@ -105,7 +105,7 @@ body {
 .right-chap {
     width: 65%;
     height: 100%;
-    background-color: red;
+    background-color: black;
 }
 .right-ung {
     width: 35%;
@@ -113,6 +113,92 @@ body {
     background-color: blue;
 }
 
+.chap-header-1 {
+    width: 100%;
+    height: 63px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 22px;
+    display: none;
+    border-bottom: 1px solid rgb(48, 48, 48);
+}
+.chap-header-1 ul{
+    display: flex;
+    height: 100%;
+    gap: 13px;
+    align-items: center;
+    list-style-type: none;
+}
+.chap-header-1 h1 {
+    font-family: "samandar";
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.chap-header-1 ul input {
+    width: 250px;
+    padding: 9px 15px;
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    background-color: #363636;
+}
+.chap-header-1 ul input::placeholder {
+    font-size: 16px;
+    color: rgb(154, 154, 154);
+}
+.chap-header-1 ul li{
+    padding: 0 5px;
+}
+.chap-header-1 ul li i{
+    font-size: 22px;
+}
+
+.chap-header-2 {
+    height: 130px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profiles {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.profil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    cursor: pointer;
+    gap: 5px;
+}
+.rasm {
+    background: linear-gradient(45deg, #FBC400, rgb(255, 0, 132), #CB00BD);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profil img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.profil p {
+    font-size: 14px;
+}
 
 
 @media (max-width:1260px){
@@ -146,5 +232,17 @@ body {
     }
     .right-chap {
         width: 100%;
+    }
+}
+
+@media (max-width: 765px){
+    .left {
+        display: none;
+    }
+    .right{
+        width: 100%;
+    }
+    .chap-header-1 {
+        display: flex;
     }
 }
